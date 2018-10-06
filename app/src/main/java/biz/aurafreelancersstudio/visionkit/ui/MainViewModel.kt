@@ -1,3 +1,4 @@
+package biz.aurafreelancersstudio.visionkit.ui
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import biz.aurafreelancersstudio.visionkit.core.api.MLkitApiFactory
