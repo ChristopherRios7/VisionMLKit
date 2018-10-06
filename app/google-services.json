@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1070880933535",
+    "firebase_url": "https://mlkit-vision.firebaseio.com",
+    "project_id": "mlkit-vision",
+    "storage_bucket": "mlkit-vision.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070880933535:android:cd25b6031584bc6c",
+        "android_client_info": {
+          "package_name": "com.christopherrios.mlkit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070880933535-l09r24e523qo23thtph5ml5qhl6etpu8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUu8993ZoBdaP0i3N2UBWtLi__Xg9tafw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

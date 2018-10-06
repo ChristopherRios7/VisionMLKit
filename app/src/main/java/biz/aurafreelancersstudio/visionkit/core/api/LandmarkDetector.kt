@@ -1,5 +1,6 @@
 package biz.aurafreelancersstudio.visionkit.core.api
 
+import biz.aurafreelancersstudio.visionkit.core.visionimage.BitmapVisionImageGenerator
 import com.google.android.gms.tasks.Task
 import com.google.firebase.ml.vision.cloud.FirebaseVisionCloudDetectorOptions
 import com.google.firebase.ml.vision.cloud.FirebaseVisionCloudDetectorOptions.LATEST_MODEL
