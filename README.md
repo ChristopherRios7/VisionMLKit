@@ -1,8 +1,8 @@
 # MLKitAndroid
 HCI Final Project using ML Kit SDK 
 
-The ML Kit for Firebase Android Quickstart app demonstrates how to use the
-various features of ML Kit to add machine learning to your application.
+The Vision app demonstrates how to use the
+various features of Google's ML Kit to add machine learning to your application.
 
 Introduction
 ------------
