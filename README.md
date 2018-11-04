@@ -26,4 +26,4 @@ Support
 
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/firebase-mlkit)
 - [Firebase Support](https://firebase.google.com/support/)
-- [Email](crios9694@gmail.com).
+- [Email](mailto:crios9694.com?Subject=visionkit).
