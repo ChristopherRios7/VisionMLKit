@@ -21,6 +21,16 @@ Getting Started
   - Image labeling (on-device)
   - Landmark recognition
   
+# Development Environment
+
+The app is written entirely in Kotlin and uses the Gradle build system.
+
+To build the app, use the `gradlew build` command or use "Import Project" in
+Android Studio. A canary or stable version >= 3.2 of Android Studio is
+required and may be downloaded
+[here](https://developer.android.com/studio/archive).
+
+  
 Support
 -------
 
