@@ -4,7 +4,7 @@ import android.content.Context
 import android.net.Uri
 import com.google.firebase.ml.vision.common.FirebaseVisionImage
 
-
+//firebase pareses the image
 class FileVisionImageGenerator(
         private val context: Context,
         private val imagePath: String) : FirebaseVisionImageGenerator {
