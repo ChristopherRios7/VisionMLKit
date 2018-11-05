@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import biz.aurafreelancersstudio.visionkit.R
 
-
+//Handles the UI Layout for various screen sizes. 
+//Keeping the Activity buttons centered and horizona, 
+//similar to 
 class CenteredHorizontalLayoutManager(context: AppCompatActivity) :
         LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false) {
 
