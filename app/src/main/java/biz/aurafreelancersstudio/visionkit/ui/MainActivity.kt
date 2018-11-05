@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity(), ImagePickerDialog.Listener, MLKitApiAb
 
     private lateinit var viewModel: MainViewModel
 
+    //Oncreate Method: draws UI and creates background services
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -170,7 +171,8 @@ class MainActivity : AppCompatActivity(), ImagePickerDialog.Listener, MLKitApiAb
             else -> false
         }
     }
-
+    
+    //intent to display Github Profile
     private fun openGithubProfile() {
         val intent = Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.github_profile_url)))
         startActivity(intent)
