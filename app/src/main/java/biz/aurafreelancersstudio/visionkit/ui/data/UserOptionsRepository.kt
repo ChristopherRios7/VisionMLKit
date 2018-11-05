@@ -8,6 +8,9 @@ import biz.aurafreelancersstudio.visionkit.R
 
 object UserOptionsRepository {
 
+    //Creating Selections of what ML Kit options the User can choose from
+    //i.e Barcode dectection, Face Detection, Image Labeling, and, ..
+    //OCR Text Detection
     val options: Array<UserOption> by lazy {
         arrayOf(
                 NewImageOption(
