@@ -7,7 +7,7 @@ import biz.aurafreelancersstudio.visionkit.R
 import biz.aurafreelancersstudio.visionkit.core.model.UserOption
 import kotlinx.android.synthetic.main.item_user_option.view.*
 
-//binds users current option to use that specific ML kit method
+//binds users current image to use that specific ML kit method
 class UserOptionViewHolder(parent: ViewGroup, private val onItemClickListener: (UserOption) -> Unit) :
         RecyclerView.ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_user_option, parent, false)) {
 
