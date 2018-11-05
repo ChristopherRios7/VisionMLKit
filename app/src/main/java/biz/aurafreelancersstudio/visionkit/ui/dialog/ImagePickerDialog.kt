@@ -10,14 +10,16 @@ import biz.aurafreelancersstudio.visionkit.R
 class ImagePickerDialog : DialogFragment() {
 
     private var listener: Listener? = null
-
+    
+    //onAttach attaches dialog to current context window
     override fun onAttach(context: Context?) {
         super.onAttach(context)
         if (context is Listener) {
             listener = context
         }
     }
-
+    
+    //creating Dialog content 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         return AlertDialog.Builder(context!!)
                 .setTitle(R.string.image_picker_dialog_title)
