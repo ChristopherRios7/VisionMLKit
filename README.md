@@ -1,7 +1,7 @@
 # MLKitAndroid
 HCI Final Project using ML Kit SDK 
 
-The Vision app demonstrates how to use the
+The Vision Kit app demonstrates how to use the
 various features of Google's ML Kit to add machine learning to your application.
 
 Introduction
@@ -30,7 +30,9 @@ Android Studio. A canary or stable version >= 3.2 of Android Studio is
 required and may be downloaded
 [here](https://developer.android.com/studio/archive).
 
-  
+# Video
+[View the video to see the application in action](https://youtu.be/Fmk5SsSk21M).
+
 Support
 -------
 
