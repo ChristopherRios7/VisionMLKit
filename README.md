@@ -1,4 +1,4 @@
-# MLKitAndroid
+# VisionMLKitAndroid
 HCI Final Project using ML Kit SDK 
 
 The Vision Kit app demonstrates how to use the
@@ -31,7 +31,14 @@ required and may be downloaded
 [here](https://developer.android.com/studio/archive).
 
 # Video
-[View the video to see the application in action](https://youtu.be/Fmk5SsSk21M).
+[View the video to see the application in action](https://youtu.be/Nu20MUTT71Q).
+
+# References
+
+This project was reference and forked by:
+
+[Firebase](https://github.com/firebase/quickstart-android/tree/master/mlkit)
+[Github Sample by Husayn](https://github.com/husaynhakeem/Android-ML-Kit-Sample)
 
 Support
 -------
