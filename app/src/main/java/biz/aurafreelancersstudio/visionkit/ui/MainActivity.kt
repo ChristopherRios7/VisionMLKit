@@ -4,6 +4,8 @@ import android.content.Intent
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
+import android.speech.tts.TextToSpeech
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -21,16 +23,34 @@ import biz.aurafreelancersstudio.visionkit.ui.recycler.UserOptionsAdapter
 import com.esafirm.imagepicker.features.ImagePicker
 import biz.aurafreelancersstudio.visionkit.R
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
 
-class MainActivity : AppCompatActivity(), ImagePickerDialog.Listener, MLKitApiAboutDialog.Listener {
+class MainActivity : AppCompatActivity(), ImagePickerDialog.Listener, MLKitApiAboutDialog.Listener, TextToSpeech.OnInitListener
+{
+    private var tts: TextToSpeech? = null
+    override fun onInit(status: Int) {
+        if (status == TextToSpeech.SUCCESS) {
+            // set US English as language for tts
+            val result = tts!!.setLanguage(Locale.US)
+
+            if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                Log.e("TTS","The Language specified is not supported!")
+            } else {
+
+            }
+
+        } else {
+            Log.e("TTS", "Initilization Failed!")
+        }
+    }
 
     private lateinit var viewModel: MainViewModel
 
-    //Oncreate Method: draws UI and creates background services
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setUpViewModel()
+        tts = TextToSpeech(this, this)
         setupBackgroundClickListener()
     }
 
@@ -90,6 +110,7 @@ class MainActivity : AppCompatActivity(), ImagePickerDialog.Listener, MLKitApiAb
     private fun renderResult(result: String) {
         if (result.isNotBlank())
             resultTextView.text = result
+        tts!!.speak(result, TextToSpeech.QUEUE_FLUSH, null,"")
     }
 
     private fun renderError(error: String) {
@@ -171,11 +192,18 @@ class MainActivity : AppCompatActivity(), ImagePickerDialog.Listener, MLKitApiAb
             else -> false
         }
     }
-    
-    //intent to display Github Profile
+
     private fun openGithubProfile() {
         val intent = Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.github_profile_url)))
         startActivity(intent)
+    }
+    public override fun onDestroy() {
+        // Shutdown TTS
+        if (tts != null) {
+            tts!!.stop()
+            tts!!.shutdown()
+        }
+        super.onDestroy()
     }
     //endregion
 }
