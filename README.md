@@ -31,7 +31,7 @@ required and may be downloaded
 [here](https://developer.android.com/studio/archive).
 
 # Video
-[View the video to see the application in action](https://youtu.be/Nu20MUTT71Q).
+[View the video to see the application in action](https://www.youtube.com/watch?v=zQ_zSExM1QM).
 
 # References
 
